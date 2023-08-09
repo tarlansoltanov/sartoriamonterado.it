@@ -1,0 +1,91 @@
+footer.main-footer {
+  position: relative;
+  background-size: cover;
+}
+
+footer.main-footer .widgets-section {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+h4.widget-title {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Crimson Text";
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.widget {
+  margin-bottom: 40px;
+}
+
+.links-widget li a {
+  font-size: 14px;
+  color: #aaa9b5;
+  font-weight: 500;
+  font-family: "DM Sans";
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.links-widget li a:hover {
+  color: var(--theme-color);
+}
+
+.links-widget li {
+  margin-bottom: 2px;
+}
+
+.footer-border-bottom {
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+
+.contact-widget_slogan {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Crimson Text";
+}
+
+.contact-widget_mail {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Crimson Text";
+}
+
+.contact-widget_mail a {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-widget_mail a:hover {
+  color: var(--theme-color);
+}
+
+.contact-widget_mail-title {
+  font-size: 14px;
+  line-height: 30px;
+  color: #aaa9b5;
+  font-weight: 500;
+  font-family: "DM Sans";
+}
+
+.footer-bottom {
+  position: relative;
+  background: #3a3949;
+  font-size: 14px;
+  line-height: 30px;
+  color: #aaa9b5;
+  font-weight: 500;
+  font-family: "DM Sans";
+  text-align: center;
+  padding: 28px 0;
+}
