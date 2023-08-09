@@ -1,3 +1,4 @@
+import ScrollToTop from "./ScrollToTop";
 import Footer from "./Footer";
 
-export { Footer };
+export { ScrollToTop, Footer };
