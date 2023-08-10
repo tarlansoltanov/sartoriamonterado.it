@@ -172,3 +172,77 @@ img {
     overflow: hidden;
   }
 }
+
+/* Sections */
+
+.sec-title {
+  font-size: 50px;
+  line-height: 50px;
+  color: #454456;
+  font-weight: 400;
+  font-family: "Crimson Text";
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.sec-title.light {
+  color: #fff;
+}
+
+.sec-title-dec {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  .sec-title {
+    font-size: 45px;
+  }
+}
+
+.img_hover_shine {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.img_hover_shine img {
+  width: 100%;
+  transition: all 500ms ease;
+}
+
+.img_hover_shine:before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, .3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  -webkit-transform: skewX(-25deg);
+  -ms-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+  opacity: 0;
+}
+
+.img_hover_shine:hover:before {
+  -webkit-animation: shine 1s;
+  animation: shine 1s;
+  opacity: 1;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
