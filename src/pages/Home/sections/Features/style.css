@@ -1,0 +1,95 @@
+/* Features Section */
+
+section.features-section {
+  position: relative;
+  padding: 120px 0 90px;
+}
+
+h4.feature-block_title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Crimson Text";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin: 15px;
+}
+
+.feature-block {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-block_hover-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.feature-block_image {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-block_text {
+  font-size: 16px;
+  line-height: 34px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "DM Sans";
+  text-align: center;
+}
+
+.feature-block_image img {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+
+  width: 374px;
+  height: 384px;
+  object-fit: cover;
+}
+
+.feature-block:hover .feature-block_image img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.feature-block:hover .feature-block_title {
+  opacity: 0;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+}
+
+.feature-block:hover .feature-block_hover-content {
+  opacity: 1;
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+
+.feature-block .feature-block_hover-content h4.feature-block_title {
+  opacity: 1;
+  margin-bottom: 25px;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.feature-block:hover .feature-block_hover-content h4.feature-block_title {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
