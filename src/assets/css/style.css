@@ -200,6 +200,22 @@ img {
   }
 }
 
+.sub-title {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: #818188;
+  font-weight: 400;
+  font-family: "Crimson Text";
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.sub-title.light {
+  color: #fff;
+}
+
 .img_hover_shine {
   position: relative;
   overflow: hidden;
