@@ -1,0 +1,70 @@
+section.error-section {
+  position: relative;
+  padding: 120px 0;
+}
+
+section.error-section .content {
+  text-align: center;
+}
+
+section.error-section h1 {
+  position: relative;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 120px;
+  margin-bottom: 10px;
+}
+
+section.error-section h2 {
+  margin-bottom: 20px;
+}
+
+section.error-section .text {
+  margin-bottom: 20px;
+}
+
+section.error-section .home-btn {
+  position: relative;
+  display: inline-block;
+  padding: 14px 50px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  z-index: 1;
+  background-color: var(--theme-color);
+  font-size: 14px;
+  line-height: 34px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Crimson Text", serif;
+}
+
+section.error-section .home-btn:hover {
+  color: #fff;
+}
+
+section.error-section .home-btn:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  content: "";
+  background-color: #222;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-top-right-radius: 33px;
+  border-bottom-right-radius: 33px;
+  z-index: -1;
+}
+
+section.error-section .home-btn:hover:before {
+  width: 100%;
+  border-radius: 0;
+}

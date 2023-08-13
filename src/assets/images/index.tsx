@@ -48,6 +48,8 @@ import ShapeIcon3 from "./shapes/shape-3.png";
 import ShapeIcon4 from "./shapes/shape-4.png";
 import ShapeIcon5 from "./shapes/shape-5.png";
 
+import ErrorBackground from "./background/error.jpg";
+
 import FooterBackground from "./background/footer.jpg";
 
 export {
@@ -91,5 +93,6 @@ export {
   ShapeIcon3,
   ShapeIcon4,
   ShapeIcon5,
+  ErrorBackground,
   FooterBackground,
 };
