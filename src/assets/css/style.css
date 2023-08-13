@@ -262,3 +262,8 @@ img {
     left: 125%;
   }
 }
+
+.swiper-wrapper img {
+  width: auto !important;
+  display: inline-block !important;
+}

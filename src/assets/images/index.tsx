@@ -28,6 +28,20 @@ import GalleryImage2 from "./gallery/gallery-2.jpg";
 import GalleryImage3 from "./gallery/gallery-3.jpg";
 import GalleryImage4 from "./gallery/gallery-4.jpg";
 
+import ClientImage1 from "./clients/client-1.png";
+import ClientImage2 from "./clients/client-2.png";
+import ClientImage3 from "./clients/client-3.png";
+import ClientImage4 from "./clients/client-4.png";
+import ClientImage5 from "./clients/client-5.png";
+import ClientImage6 from "./clients/client-6.png";
+import ClientImage7 from "./clients/client-7.png";
+import ClientImage8 from "./clients/client-8.png";
+import ClientImage9 from "./clients/client-9.png";
+import ClientImage10 from "./clients/client-10.png";
+import ClientImage11 from "./clients/client-11.png";
+import ClientImage12 from "./clients/client-12.png";
+import ClientImage13 from "./clients/client-13.png";
+
 import ShapeIcon1 from "./shapes/shape-1.png";
 import ShapeIcon2 from "./shapes/shape-2.png";
 import ShapeIcon3 from "./shapes/shape-3.png";
@@ -59,6 +73,19 @@ export {
   GalleryImage2,
   GalleryImage3,
   GalleryImage4,
+  ClientImage1,
+  ClientImage2,
+  ClientImage3,
+  ClientImage4,
+  ClientImage5,
+  ClientImage6,
+  ClientImage7,
+  ClientImage8,
+  ClientImage9,
+  ClientImage10,
+  ClientImage11,
+  ClientImage12,
+  ClientImage13,
   ShapeIcon1,
   ShapeIcon2,
   ShapeIcon3,
