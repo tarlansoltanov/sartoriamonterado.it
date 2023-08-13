@@ -1,15 +1,22 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import { Header, Footer, ScrollToTop } from "src/components";
 
-import { Home } from "src/pages";
+import { publicRoutes } from "src/routes";
 
 function App() {
   return (
     <React.Fragment>
       <div className="page-wrapper">
         <Header />
-        <Home />
+
+        <Routes>
+          {publicRoutes.map((route, index) => (
+            <Route key={index} path={route.path} element={route.component} />
+          ))}
+        </Routes>
+
         <Footer />
       </div>
 
