@@ -44,6 +44,18 @@ import ClientImage13 from "./clients/client-13.png";
 
 import PhilosophyImage from "./resources/philosophy.jpg";
 
+import HistoryImage1 from "./history/history-1.jpg";
+import HistoryImage2 from "./history/history-2.jpg";
+import HistoryImage3 from "./history/history-3.jpg";
+import HistoryImage4 from "./history/history-4.jpg";
+import HistoryImage5 from "./history/history-5.jpg";
+import HistoryImage6 from "./history/history-6.jpg";
+import HistoryImage7 from "./history/history-7.jpg";
+import HistoryImage8 from "./history/history-8.jpg";
+import HistoryImage9 from "./history/history-9.jpg";
+import HistoryImage10 from "./history/history-10.jpg";
+import HistoryImage11 from "./history/history-11.jpg";
+
 import ShapeIcon1 from "./shapes/shape-1.png";
 import ShapeIcon2 from "./shapes/shape-2.png";
 import ShapeIcon3 from "./shapes/shape-3.png";
@@ -52,6 +64,7 @@ import ShapeIcon5 from "./shapes/shape-5.png";
 
 import ErrorBackground from "./background/error.jpg";
 import PhilosophyBackground from "./background/philosophy.jpg";
+import AboutBackground from "./background/about.jpg";
 
 import FooterBackground from "./background/footer.jpg";
 
@@ -92,6 +105,17 @@ export {
   ClientImage12,
   ClientImage13,
   PhilosophyImage,
+  HistoryImage1,
+  HistoryImage2,
+  HistoryImage3,
+  HistoryImage4,
+  HistoryImage5,
+  HistoryImage6,
+  HistoryImage7,
+  HistoryImage8,
+  HistoryImage9,
+  HistoryImage10,
+  HistoryImage11,
   ShapeIcon1,
   ShapeIcon2,
   ShapeIcon3,
@@ -99,5 +123,6 @@ export {
   ShapeIcon5,
   ErrorBackground,
   PhilosophyBackground,
+  AboutBackground,
   FooterBackground,
 };

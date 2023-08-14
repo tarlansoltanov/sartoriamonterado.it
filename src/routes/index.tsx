@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 
-import { Home, Philosophy, Error } from "src/pages";
+import { Home, About, Philosophy, Error } from "src/pages";
 
 const publicRoutes = [
   {
@@ -10,6 +10,10 @@ const publicRoutes = [
   {
     path: "/home",
     component: <Home />,
+  },
+  {
+    path: "/about",
+    component: <About />,
   },
   {
     path: "/philosophy",
