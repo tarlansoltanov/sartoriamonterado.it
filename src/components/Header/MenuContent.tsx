@@ -1,29 +1,28 @@
-const MenuContent = () => {
-  const isHome = true;
+import { Link } from "react-router-dom";
 
+const MenuContent = () => {
   return (
     <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
       <ul className="navigation">
         <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Philosophy</a>
+          <Link to="/">Home</Link>
         </li>
 
-        {isHome && (
-          <>
-            <li>
-              <a href="#C4">Fabrics</a>
-            </li>
-            <li>
-              <a href="#C5">Bespoke</a>
-            </li>
-          </>
-        )}
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+
+        <li>
+          <Link to="/philosophy">Philosophy</Link>
+        </li>
+
+        <li>
+          <Link to="/home#fabrics">Fabrics</Link>
+        </li>
+
+        <li>
+          <Link to="/home#clients">Bespoke</Link>
+        </li>
       </ul>
     </div>
   );

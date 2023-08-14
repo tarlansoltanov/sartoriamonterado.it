@@ -1,12 +1,17 @@
 import { useState, useEffect } from "react";
 
+import { useLocation } from "react-router-dom";
+
 import { BarIconBlack, BarIconWhite, Logo, LogoClear } from "src/assets/images";
+
 import MenuContent from "./MenuContent";
 
 import "./style.css";
 
 const Header = () => {
-  const isHome = true;
+  const location = useLocation();
+
+  const isHome = location.pathname.includes("home");
 
   const [posY, setPosY] = useState(0);
 
@@ -28,7 +33,10 @@ const Header = () => {
   };
 
   return (
-    <header className={`main-header ${isHome ? "header-style-two" : "header-style-one"} ${posY > 100 && "fixed-header"}`}>
+    <header
+      className={`main-header ${isHome ? "header-style-two" : "header-style-one"} ${
+        posY > 100 && "fixed-header"
+      }`}>
       {/* Header Top */}
       <div className={isHome ? "header-top-two" : "header-top"}>
         <div className="auto-container">
@@ -70,7 +78,9 @@ const Header = () => {
       <div className="header-upper">
         <div className="auto-container">
           <div className="inner-container">
-            <div className={`${!isHome ? "left-column" : "inner-container"}`} style={{ width: "100%" }}>
+            <div
+              className={`${!isHome ? "left-column" : "inner-container"}`}
+              style={{ width: "100%" }}>
               {/* Logo */}
               <div className={`logo-box ${isHome && "d-none"}`}>
                 <div className="logo">

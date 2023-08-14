@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { FooterBackground } from "src/assets/images";
 
 import "./style.css";
@@ -18,10 +20,10 @@ const Footer = () => {
                     <div className="widget-content">
                       <ul>
                         <li>
-                          <a href="#">Fabrics</a>
+                          <Link to="/home#fabrics">Fabrics</Link>
                         </li>
                         <li>
-                          <a href="#">Bespoke</a>
+                          <Link to="/home#clients">Bespoke</Link>
                         </li>
                       </ul>
                     </div>
@@ -35,10 +37,10 @@ const Footer = () => {
                     <div className="widget-content">
                       <ul>
                         <li>
-                          <a href="#">About</a>
+                          <Link to="/about">About</Link>
                         </li>
                         <li>
-                          <a href="#">Philosophy</a>
+                          <Link to="/philosophy">Philosophy</Link>
                         </li>
                       </ul>
                     </div>
@@ -69,9 +71,14 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="footer-bottom">
         <div className="auto-container">
-          <div className="copyright">© Copyright 2023 by Sartoria Monterado</div>
           <div className="copyright">
-            Design and Develop by <a href="https://codeshift.az">CodeShift</a>
+            © Copyright {new Date().getFullYear()} by Sartoria Monterado
+          </div>
+          <div className="copyright">
+            Design and Develop by{" "}
+            <a href="https://codeshift.az" target="_blank">
+              CodeShift
+            </a>
           </div>
         </div>
       </div>

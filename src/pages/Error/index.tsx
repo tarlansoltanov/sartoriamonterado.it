@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { ErrorBackground } from "src/assets/images";
 
 import "./style.css";
@@ -15,7 +17,7 @@ const Error = () => {
             <div className="content-wrapper">
               <ul className="bread-crumb">
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>Page Not Found</li>
               </ul>
@@ -33,11 +35,14 @@ const Error = () => {
         <div className="auto-container">
           <div className="content">
             <h1>404</h1>
+
             <h2>Oops! This page can’t be found</h2>
+
             <div className="text">Sorry, but the page you are looking for does not exists!</div>
-            <a href="#" className="home-btn">
+
+            <Link to="/" className="home-btn">
               <span> Go to home page</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

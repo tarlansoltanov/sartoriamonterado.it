@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { Header, Footer, ScrollToTop } from "src/components";
 
 import { publicRoutes } from "src/routes";
+import { ScrollMiddleWare } from "src/routes/middlewares";
 
 function App() {
   return (
@@ -13,7 +14,11 @@ function App() {
 
         <Routes>
           {publicRoutes.map((route, index) => (
-            <Route key={index} path={route.path} element={route.component} />
+            <Route
+              key={index}
+              path={route.path}
+              element={<ScrollMiddleWare>{route.component}</ScrollMiddleWare>}
+            />
           ))}
         </Routes>
 
