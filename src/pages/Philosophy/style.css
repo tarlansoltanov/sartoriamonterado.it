@@ -1,0 +1,51 @@
+/* introduction two */
+
+.introduction-block-two_author-thumb {
+  position: relative;
+  margin-right: 20px;
+  border: 2px dashed var(--theme-color);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.introduction-block-two_author-thumb img {
+  border-radius: 50%;
+}
+
+.introduction-block-two_author-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -25px;
+  margin-bottom: 30px;
+}
+
+section.introduction-section-two {
+  position: relative;
+  padding: 120px 0 90px;
+}
+
+.introduction-block-two_image {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 5px solid var(--theme-color);
+  display: inline-block;
+}
+
+.introduction-block-two_image-wrapper {
+  text-align: right;
+}
+
+.introduction-section-two_description {
+  font-size: 18px;
+  line-height: 36px;
+  color: #818188;
+  font-weight: 400;
+  font-family: "DM Sans";
+}

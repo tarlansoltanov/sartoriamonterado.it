@@ -42,6 +42,8 @@ import ClientImage11 from "./clients/client-11.png";
 import ClientImage12 from "./clients/client-12.png";
 import ClientImage13 from "./clients/client-13.png";
 
+import PhilosophyImage from "./resources/philosophy.jpg";
+
 import ShapeIcon1 from "./shapes/shape-1.png";
 import ShapeIcon2 from "./shapes/shape-2.png";
 import ShapeIcon3 from "./shapes/shape-3.png";
@@ -49,6 +51,7 @@ import ShapeIcon4 from "./shapes/shape-4.png";
 import ShapeIcon5 from "./shapes/shape-5.png";
 
 import ErrorBackground from "./background/error.jpg";
+import PhilosophyBackground from "./background/philosophy.jpg";
 
 import FooterBackground from "./background/footer.jpg";
 
@@ -88,11 +91,13 @@ export {
   ClientImage11,
   ClientImage12,
   ClientImage13,
+  PhilosophyImage,
   ShapeIcon1,
   ShapeIcon2,
   ShapeIcon3,
   ShapeIcon4,
   ShapeIcon5,
   ErrorBackground,
+  PhilosophyBackground,
   FooterBackground,
 };
