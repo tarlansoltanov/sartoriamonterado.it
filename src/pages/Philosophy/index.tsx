@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 
-import { Link } from "react-router-dom";
-
 import AOS from "aos";
+
+import { PageTitle } from "src/components";
 
 import { ShapeIcon1, PhilosophyBackground, PhilosophyImage } from "src/assets/images";
 
@@ -16,30 +16,7 @@ const Philosophy = () => {
 
   return (
     <React.Fragment>
-      {/* Page Title */}
-      <section className="page-title">
-        <div
-          className="bg"
-          style={{
-            backgroundImage: `url(${PhilosophyBackground})`,
-            backgroundPosition: "center",
-          }}></div>
-        <div className="auto-container">
-          <div className="content-box">
-            <div className="content-wrapper">
-              <ul className="bread-crumb">
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>Philosophy</li>
-              </ul>
-              <div className="title">
-                <h1>Philosophy</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageTitle title="Philosophy" background={PhilosophyBackground} />
 
       {/* Introduction Section */}
       <section className="introduction-section-two">
@@ -54,8 +31,10 @@ const Philosophy = () => {
                 <div className="sec-title-dec">
                   <img src={ShapeIcon1} alt="Arrow Shape Icon" />
                 </div>
+
                 <div className="sub-title">Our Philosophy</div>
               </div>
+
               <div className="introduction-section-two_description mb-30">
                 The philosophy of Sartoria Monterado embodies Italian elegance. The uniqueness of
                 the designed details has stood the test of time. A classic silhouette is combined

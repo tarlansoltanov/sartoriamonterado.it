@@ -2,6 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import { PageTitle } from "src/components";
+
 import { ErrorBackground } from "src/assets/images";
 
 import "./style.css";
@@ -10,25 +12,7 @@ const Error = () => {
   return (
     <React.Fragment>
       {/* Page Title */}
-      <section className="page-title">
-        <div className="bg" style={{ backgroundImage: `url(${ErrorBackground})` }}></div>
-        <div className="auto-container">
-          <div className="content-box">
-            <div className="content-wrapper">
-              <ul className="bread-crumb">
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>Page Not Found</li>
-              </ul>
-
-              <div className="title">
-                <h1>Page Not Found</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PageTitle title="Page Not Found" background={ErrorBackground} />
 
       {/* Error Section */}
       <section className="error-section">
