@@ -1,25 +1,27 @@
+import { useTranslation } from "react-i18next";
+
 import { FeatureImage1, FeatureImage2, FeatureImage3 } from "src/assets/images";
 
 import "./style.css";
 
 const Features = () => {
+  const { t } = useTranslation();
+
   const featureItems = [
     {
       image: FeatureImage1,
-      title: "Development of an individual cut",
-      subtitle: "Development of an individual cut",
+      title: t("pages.home.features.item1.title"),
+      subtitle: t("pages.home.features.item1.subtitle"),
     },
     {
       image: FeatureImage2,
-      title: "Clothes made by hand according to your exact requirements",
-      subtitle:
-        "Handmade garments to your exact specifications require over 80 hours of delicate and precise work",
+      title: t("pages.home.features.item2.title"),
+      subtitle: t("pages.home.features.item2.subtitle"),
     },
     {
       image: FeatureImage3,
-      title: "Sartoria Monterado custom made suits for men",
-      subtitle:
-        "Sartoria Monterado bespoke suits for men who value exclusivity and attention to detail",
+      title: t("pages.home.features.item3.title"),
+      subtitle: t("pages.home.features.item3.subtitle"),
     },
   ];
 

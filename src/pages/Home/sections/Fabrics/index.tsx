@@ -1,12 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 import { FabricsImage, ShapeIcon1 } from "src/assets/images";
 
 import "./style.css";
 
 const Fabrics = () => {
+  const { t } = useTranslation();
+
   const fabricsData = {
     image: FabricsImage,
-    title: "Fabrics",
-    text: "Because we strive for craftsmanship, quality materials and attention to detail with the same passion we did ninety years ago: we offer expertise and excellence in tailoring, combined with a selection of the world's finest and most renowned fabrics.",
+    title: t("pages.home.fabrics.title"),
+    text: t("pages.home.fabrics.text"),
   };
 
   return (

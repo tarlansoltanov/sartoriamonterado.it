@@ -9,5 +9,58 @@
     "services": "Our Services",
     "links": "Links",
     "send_email": "Send us an email"
+  },
+  "pages": {
+    "home": {
+      "banner": {
+        "slide1": {
+          "title": "A suit is an expression of personality",
+          "subtitle": "Custom tailoring is part of our sartorial culture"
+        },
+        "slide2": {
+          "title": "Individual Tailoring",
+          "subtitle": "This is the pinnacle of tailoring"
+        }
+      },
+      "features": {
+        "item1": {
+          "title": "Development of an individual cut",
+          "subtitle": "Development of an individual cut"
+        },
+        "item2": {
+          "title": "Clothes made by hand according to your exact requirements",
+          "subtitle": "Handmade garments to your exact specifications require over 80 hours of delicate and precise work"
+        },
+        "item3": {
+          "title": "Sartoria Monterado custom made suits for men",
+          "subtitle": "Sartoria Monterado bespoke suits for men who value exclusivity and attention to detail"
+        }
+      },
+      "fabrics": {
+        "title": "Fabrics",
+        "text": "Because we strive for craftsmanship, quality materials and attention to detail with the same passion we did ninety years ago: we offer expertise and excellence in tailoring, combined with a selection of the world's finest and most renowned fabrics."
+      },
+      "services": {
+        "title": "Our Services",
+        "item1": {
+          "title": "Individual Tailoring:",
+          "subtitle": "suits, jackets, trousers, shirts, coats."
+        },
+        "item2": {
+          "title": "The silhouette and shape of the unique cut."
+        },
+        "item3": {
+          "title": "The silhouette and shape of the unique cut."
+        },
+        "item4": {
+          "title": "Handmade"
+        }
+      },
+      "gallery": {
+        "title1": "Our Products",
+        "subtitle1": "Checkout Our Products",
+        "title2": "And Details"
+      }
+    }
   }
 }

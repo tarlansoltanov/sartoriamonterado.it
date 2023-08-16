@@ -9,5 +9,58 @@
     "services": "I nostri servizi",
     "links": "Collegamenti",
     "send_email": "Inviaci un'e-mail"
+  },
+  "pages": {
+    "home": {
+      "banner": {
+        "slide1": {
+          "title": "Un abito è l'espressione della personalità",
+          "subtitle": "La sartoria individuale fa parte della nostra cultura sartoriale"
+        },
+        "slide2": {
+          "title": "Sartoria individuale",
+          "subtitle": "è l'apice della sartoria."
+        }
+      },
+      "features": {
+        "item1": {
+          "title": "Disegni tagliati su misura",
+          "subtitle": "Disegni tagliati su misura"
+        },
+        "item2": {
+          "title": "Capi realizzati a mano secondo le vostre esatte esigenze",
+          "subtitle": "Capi realizzati a mano secondo le vostre esatte esigenze, che richiedono più di 80 ore di lavoro delicato e preciso"
+        },
+        "item3": {
+          "title": "Gli abiti su misura della Sartoria Monterado",
+          "subtitle": "Gli abiti su misura della Sartoria Monterado sono per gli uomini che apprezzano l'esclusività e l'attenzione ai dettagli"
+        }
+      },
+      "fabrics": {
+        "title": "Tessuti",
+        "text": "Perché perseguiamo l'artigianalità, la qualità dei materiali e l'attenzione ai dettagli con la stessa passione di novant'anni fa: offriamo esperienza ed eccellenza nella confezione di abiti sartoriali, unita a una selezione dei tessuti più pregiati e rinomati al mondo."
+      },
+      "services": {
+        "title": "I nostri servizi",
+        "item1": {
+          "title": "Sartoria individuale:",
+          "subtitle": "abiti, giacche, pantaloni, camicie, cappotti."
+        },
+        "item2": {
+          "title": "Silhouette e taglio unico."
+        },
+        "item3": {
+          "title": "Silhouette e taglio unico."
+        },
+        "item4": {
+          "title": "Fatto a mano"
+        }
+      },
+      "gallery": {
+        "title1": "I nostri prodotti",
+        "subtitle1": "Dai un'occhiata ai nostri prodotti",
+        "title2": "E Dettagli"
+      }
+    }
   }
 }

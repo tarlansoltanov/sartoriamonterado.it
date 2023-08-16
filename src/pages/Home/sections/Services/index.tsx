@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   ServiceImage1,
   ServiceImage2,
@@ -9,23 +11,25 @@ import {
 import "./style.css";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   const serviceItems = [
     {
       image: ServiceImage1,
-      title: "Individual Tailoring:",
-      text: "suits, jackets, trousers, shirts, coats.",
+      title: t("pages.home.services.item1.title"),
+      text: t("pages.home.services.item1.subtitle"),
     },
     {
       image: ServiceImage2,
-      title: "The silhouette and shape of the unique cut.",
+      title: t("pages.home.services.item2.title"),
     },
     {
       image: ServiceImage3,
-      title: "The silhouette and shape of the unique cut.",
+      title: t("pages.home.services.item3.title"),
     },
     {
       image: ServiceImage4,
-      title: "Handmade",
+      title: t("pages.home.services.item4.title"),
     },
   ];
 
@@ -37,7 +41,7 @@ const Services = () => {
             <img src={ShapeIcon1} alt="Arrow Shape Icon" />
           </div>
           <div className="sub-title"></div>
-          <div className="sec-title">Our Services</div>
+          <div className="sec-title">{t("pages.home.services.title")}</div>
         </div>
 
         <div className="row">

@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import { Fancybox } from "src/components";
 
 import {
@@ -15,6 +17,8 @@ import {
 import "./style.css";
 
 const Gallery = () => {
+  const { t } = useTranslation();
+
   const processItems = [
     {
       image: ProcessImage1,
@@ -59,8 +63,8 @@ const Gallery = () => {
         <div className="sec-title-dec">
           <img src={ShapeIcon1} alt="Arrow Shape Icon" />
         </div>
-        <div className="sub-title">Checkout our Products</div>
-        <div className="sec-title">Our Products</div>
+        <div className="sub-title">{t("pages.home.gallery.subtitle1")}</div>
+        <div className="sec-title">{t("pages.home.gallery.title1")}</div>
       </div>
 
       <div className="auto-continer">
@@ -101,7 +105,7 @@ const Gallery = () => {
         <div className="sec-title-dec">
           <img src={ShapeIcon1} alt="Arrow Shape Icon" />
         </div>
-        <div className="sec-title">And Details</div>
+        <div className="sec-title">{t("pages.home.gallery.title2")}</div>
       </div>
 
       <div className="auto-continer">

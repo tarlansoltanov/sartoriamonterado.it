@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import Swiper, { Navigation, Autoplay } from "swiper";
 
 import { SlideImage1, SlideImage2 } from "src/assets/images";
@@ -10,16 +12,18 @@ import "swiper/css/navigation";
 import "./style.css";
 
 const Banner = () => {
+  const { t } = useTranslation();
+
   const bannerItems = [
     {
       image: SlideImage1,
-      title: "A suit is an expression of personality",
-      subtitle: "Custom tailoring is part of our sartorial culture",
+      title: t("pages.home.banner.slide1.title"),
+      subtitle: t("pages.home.banner.slide1.subtitle"),
     },
     {
       image: SlideImage2,
-      title: "Individual Tailoring",
-      subtitle: "This is the pinnacle of tailoring",
+      title: t("pages.home.banner.slide2.title"),
+      subtitle: t("pages.home.banner.slide2.subtitle"),
     },
   ];
 
