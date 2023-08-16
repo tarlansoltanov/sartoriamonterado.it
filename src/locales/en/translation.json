@@ -1,1 +1,13 @@
-{}
+{
+  "home": "Home",
+  "about": "About",
+  "philosophy": "Philosophy",
+  "fabrics": "Fabrics",
+  "bespoke": "Bespoke",
+  "language": "Language",
+  "footer": {
+    "services": "Our Services",
+    "links": "Links",
+    "send_email": "Send us an email"
+  }
+}

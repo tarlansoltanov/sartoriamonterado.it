@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 import "./style.css";
 
 interface Props {
@@ -8,6 +10,8 @@ interface Props {
 }
 
 const PageTitle = ({ title, background }: Props) => {
+  const { t } = useTranslation();
+
   return (
     <section className="page-title">
       <div
@@ -20,7 +24,7 @@ const PageTitle = ({ title, background }: Props) => {
           <div className="content-wrapper">
             <ul className="bread-crumb">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">{t("home")}</Link>
               </li>
               <li>{title}</li>
             </ul>

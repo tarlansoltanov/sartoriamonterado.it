@@ -1,1 +1,13 @@
-{}
+{
+  "home": "Pagina Iniziale",
+  "about": "Storia",
+  "philosophy": "Filosofia",
+  "fabrics": "Tessuti",
+  "bespoke": "Su Misura",
+  "language": "Lingua",
+  "footer": {
+    "services": "I nostri servizi",
+    "links": "Collegamenti",
+    "send_email": "Inviaci un'e-mail"
+  }
+}

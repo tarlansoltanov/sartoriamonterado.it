@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 import { FooterBackground } from "src/assets/images";
 
 import "./style.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="main-footer" style={{ backgroundImage: `url("${FooterBackground}")` }}>
       <div className="auto-container">
@@ -16,14 +20,14 @@ const Footer = () => {
                 {/* Services Widget */}
                 <div className="col-md-6">
                   <div className="widget links-widget">
-                    <h4 className="widget-title">Our Services</h4>
+                    <h4 className="widget-title">{t("footer.services")}</h4>
                     <div className="widget-content">
                       <ul>
                         <li>
-                          <Link to="/home#fabrics">Fabrics</Link>
+                          <Link to="/home#fabrics">{t("fabrics")}</Link>
                         </li>
                         <li>
-                          <Link to="/home#clients">Bespoke</Link>
+                          <Link to="/home#clients">{t("bespoke")}</Link>
                         </li>
                       </ul>
                     </div>
@@ -33,14 +37,14 @@ const Footer = () => {
                 {/* Links Widget */}
                 <div className="col-md-6">
                   <div className="widget links-widget">
-                    <h4 className="widget-title">Links</h4>
+                    <h4 className="widget-title">{t("footer.links")}</h4>
                     <div className="widget-content">
                       <ul>
                         <li>
-                          <Link to="/about">About</Link>
+                          <Link to="/about">{t("about")}</Link>
                         </li>
                         <li>
-                          <Link to="/philosophy">Philosophy</Link>
+                          <Link to="/philosophy">{t("philosophy")}</Link>
                         </li>
                       </ul>
                     </div>
@@ -48,18 +52,16 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="footer-border-bottom" ></div>
+              <div className="footer-border-bottom"></div>
               <div className="row">
                 {/* Slogan */}
                 <div className="col-md-6">
-                  <div className="contact-widget_slogan">
-                    Disegni tagliati su misura
-                  </div>
+                  <div className="contact-widget_slogan">Disegni tagliati su misura</div>
                 </div>
 
                 {/* Mail */}
                 <div className="col-md-6">
-                  <div className="contact-widget_mail-title">Send us an email</div>
+                  <div className="contact-widget_mail-title">{t("footer.send_email")}</div>
                   <div className="contact-widget_mail">
                     <a href="mailto:info@sartoriamonterado.it">info@sartoriamonterado.it</a>
                   </div>
