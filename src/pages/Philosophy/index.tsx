@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 
+import { useTranslation } from "react-i18next";
+
 import AOS from "aos";
 
 import { PageTitle } from "src/components";
@@ -10,13 +12,15 @@ import "aos/dist/aos.css";
 import "./style.css";
 
 const Philosophy = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <React.Fragment>
-      <PageTitle title="Philosophy" background={PhilosophyBackground} />
+      <PageTitle title={t("philosophy")} background={PhilosophyBackground} />
 
       {/* Introduction Section */}
       <section className="introduction-section-two">
@@ -32,16 +36,11 @@ const Philosophy = () => {
                   <img src={ShapeIcon1} alt="Arrow Shape Icon" />
                 </div>
 
-                <div className="sub-title">Our Philosophy</div>
+                <div className="sub-title">{t("pages.philosophy.title")}</div>
               </div>
 
               <div className="introduction-section-two_description">
-                The philosophy of Sartoria Monterado embodies Italian elegance. The uniqueness of
-                the designed details has stood the test of time. A classic silhouette is combined
-                with exceptional comfort. In every detail, under every stitch and between the
-                textures of every fabric there is it's a story: it's the existential spirit of the
-                craftsmen, the hands, the passion and the experience of those who love their work
-                and have decided to make dreams come true.
+                <p>{t("pages.philosophy.text")}</p>
               </div>
             </div>
             <div className="col-lg-4">
