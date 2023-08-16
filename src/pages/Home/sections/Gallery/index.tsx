@@ -97,7 +97,7 @@ const Gallery = () => {
         </Fancybox>
       </div>
 
-      <div className="text-center mt-20">
+      <div className="text-center" style={{ marginTop: "20px" }}>
         <div className="sec-title-dec">
           <img src={ShapeIcon1} alt="Arrow Shape Icon" />
         </div>

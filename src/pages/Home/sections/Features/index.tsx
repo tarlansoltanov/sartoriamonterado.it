@@ -12,21 +12,23 @@ const Features = () => {
     {
       image: FeatureImage2,
       title: "Clothes made by hand according to your exact requirements",
-      subtitle: "Handmade garments to your exact specifications require over 80 hours of delicate and precise work",
+      subtitle:
+        "Handmade garments to your exact specifications require over 80 hours of delicate and precise work",
     },
     {
       image: FeatureImage3,
       title: "Sartoria Monterado custom made suits for men",
-      subtitle: "Sartoria Monterado bespoke suits for men who value exclusivity and attention to detail",
+      subtitle:
+        "Sartoria Monterado bespoke suits for men who value exclusivity and attention to detail",
     },
   ];
 
   return (
     <section className="features-section">
       <div className="auto-container">
-        <div className="row">
+        <div className="row justify-content-center">
           {featureItems.map((item, index) => (
-            <div className="col-lg-4" key={index}>
+            <div className="col-md-4 col-sm-6 d-flex justify-content-center" key={index}>
               <div className="feature-block">
                 <div className="feature-block_image">
                   <img src={item.image} alt="Feature Image" />

@@ -1,5 +1,3 @@
-/* introduction two */
-
 .introduction-block-two_author-thumb {
   position: relative;
   margin-right: 20px;
@@ -48,4 +46,5 @@ section.introduction-section-two {
   color: #818188;
   font-weight: 400;
   font-family: "DM Sans";
+  margin-bottom: 30px;
 }

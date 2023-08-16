@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import Swiper, { Navigation } from "swiper";
+import Swiper, { Navigation, Autoplay } from "swiper";
 
 import { SlideImage1, SlideImage2 } from "src/assets/images";
 
@@ -24,7 +24,7 @@ const Banner = () => {
   ];
 
   const slider = new Swiper(".banner-slider", {
-    modules: [Navigation],
+    modules: [Navigation, Autoplay],
     preloadImages: false,
     loop: true,
     grabCursor: true,
@@ -58,10 +58,13 @@ const Banner = () => {
       <div className="swiper-container banner-slider">
         <div className="swiper-wrapper">
           {bannerItems.map((item, index) => (
-            <div className="swiper-slide hm-slide-photo" style={{ backgroundImage: `url(${item.image})` }} key={index}>
+            <div
+              className="swiper-slide"
+              style={{ backgroundImage: `url(${item.image})` }}
+              key={index}>
               <div className="content-outer">
                 <div className="content-box text-center justify-content-center">
-                  <div className="inner mb_190">
+                  <div className="inner">
                     <h4>{item.title}</h4>
                     <h2 style={{ color: "#ffffff" }}>{item.subtitle}</h2>
                     <div className="link-box"></div>

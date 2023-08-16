@@ -35,7 +35,7 @@ const Philosophy = () => {
                 <div className="sub-title">Our Philosophy</div>
               </div>
 
-              <div className="introduction-section-two_description mb-30">
+              <div className="introduction-section-two_description">
                 The philosophy of Sartoria Monterado embodies Italian elegance. The uniqueness of
                 the designed details has stood the test of time. A classic silhouette is combined
                 with exceptional comfort. In every detail, under every stitch and between the

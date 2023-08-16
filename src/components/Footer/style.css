@@ -5,7 +5,7 @@ footer.main-footer {
 
 footer.main-footer .widgets-section {
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 h4.widget-title {
@@ -41,6 +41,7 @@ h4.widget-title {
 
 .footer-border-bottom {
   border-bottom: 1px solid rgb(255 255 255 / 20%);
+  margin-bottom: 40px;
 }
 
 .contact-widget_slogan {

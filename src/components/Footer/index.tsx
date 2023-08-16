@@ -48,17 +48,19 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="footer-border-bottom mb-40"></div>
+              <div className="footer-border-bottom" ></div>
               <div className="row">
                 {/* Slogan */}
                 <div className="col-md-6">
-                  <div className="contact-widget_slogan mb-40">Disegni tagliati su misura</div>
+                  <div className="contact-widget_slogan">
+                    Disegni tagliati su misura
+                  </div>
                 </div>
 
                 {/* Mail */}
                 <div className="col-md-6">
                   <div className="contact-widget_mail-title">Send us an email</div>
-                  <div className="contact-widget_mail mb-40">
+                  <div className="contact-widget_mail">
                     <a href="mailto:info@sartoriamonterado.it">info@sartoriamonterado.it</a>
                   </div>
                 </div>
