@@ -643,10 +643,14 @@
   z-index: 5;
 }
 
-.mobile-menu .navigation li.dropdown .dropdown-btn.open {
+.mobile-menu .navigation li.dropdown.open .dropdown-btn {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+.mobile-menu .navigation li.dropdown.open ul {
+  display: block;
 }
 
 .mobile-menu .navigation li>ul,

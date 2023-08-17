@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 import i18n from "src/i18n";
@@ -10,6 +12,8 @@ const MenuContent = () => {
     localStorage.setItem("I18N_LANGUAGE", language);
     i18n.changeLanguage(language);
   };
+
+  const [languageDropdown, setLanguageDropdown] = useState(false);
 
   return (
     <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
@@ -35,7 +39,7 @@ const MenuContent = () => {
         </li>
 
         {/* Language */}
-        <li className="dropdown">
+        <li className={`dropdown ${languageDropdown && "open"}`}>
           <a href="#">{t("language")}</a>
 
           <ul>
@@ -50,6 +54,10 @@ const MenuContent = () => {
               </a>
             </li>
           </ul>
+
+          <div className="dropdown-btn" onClick={() => setLanguageDropdown(!languageDropdown)}>
+            <span className="fa fa-angle-right"></span>
+          </div>
         </li>
       </ul>
     </div>
