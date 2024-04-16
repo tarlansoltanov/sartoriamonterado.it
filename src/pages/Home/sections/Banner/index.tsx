@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-
 import { useTranslation } from "react-i18next";
 
+// Swiper
 import Swiper, { Navigation, Autoplay } from "swiper";
-
-import { SlideImage1, SlideImage2 } from "src/assets/images";
-
 import "swiper/css";
 import "swiper/css/navigation";
 
+// Assets
+import { SlideImage1, SlideImage2 } from "@/assets/images";
+
+// Styles
 import "./style.css";
 
 const Banner = () => {
@@ -27,33 +28,33 @@ const Banner = () => {
     },
   ];
 
-  const slider = new Swiper(".banner-slider", {
-    modules: [Navigation, Autoplay],
-    preloadImages: false,
-    loop: true,
-    grabCursor: true,
-    centeredSlides: false,
-    resistance: true,
-    resistanceRatio: 0.6,
-    speed: 1400,
-    spaceBetween: 0,
-    parallax: false,
-    effect: "slide",
-    autoplay: {
-      delay: 6000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".banner-slider-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".banner-slider-button-next",
-      prevEl: ".banner-slider-button-prev",
-    },
-  });
-
   useEffect(() => {
+    const slider = new Swiper(".banner-slider", {
+      modules: [Navigation, Autoplay],
+      preloadImages: false,
+      loop: true,
+      grabCursor: true,
+      centeredSlides: false,
+      resistance: true,
+      resistanceRatio: 0.6,
+      speed: 1400,
+      spaceBetween: 0,
+      parallax: false,
+      effect: "slide",
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".banner-slider-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".banner-slider-button-next",
+        prevEl: ".banner-slider-button-prev",
+      },
+    });
+
     slider.init();
   }, []);
 

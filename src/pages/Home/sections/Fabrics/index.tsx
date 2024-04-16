@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 
-import { FabricsImage, ShapeIcon1 } from "src/assets/images";
+// Assets
+import { FabricsImage, ShapeIcon1 } from "@/assets/images";
 
+// Styles
 import "./style.css";
 
 const Fabrics = () => {

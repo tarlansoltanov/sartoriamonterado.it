@@ -1,14 +1,17 @@
 import React, { useEffect } from "react";
-
 import { useTranslation } from "react-i18next";
 
+// AOS
 import AOS from "aos";
-
-import { PageTitle } from "src/components";
-
-import { ShapeIcon1, PhilosophyBackground, PhilosophyImage } from "src/assets/images";
-
 import "aos/dist/aos.css";
+
+// Assets
+import { ShapeIcon1, PhilosophyBackground, PhilosophyImage } from "@/assets/images";
+
+// Components
+import PageTitle from "@/components/PageTitle";
+
+// Styles
 import "./style.css";
 
 const Philosophy = () => {

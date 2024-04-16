@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import { Fancybox } from "src/components";
-
+// Assets
 import {
   ProcessImage1,
   ProcessImage2,
@@ -12,8 +11,12 @@ import {
   GalleryImage3,
   GalleryImage4,
   ShapeIcon1,
-} from "src/assets/images";
+} from "@/assets/images";
 
+// Components
+import Fancybox from "@/components/Fancybox";
+
+// Styles
 import "./style.css";
 
 const Gallery = () => {

@@ -17,7 +17,7 @@ import {
   ClientImage11,
   ClientImage12,
   ClientImage13,
-} from "src/assets/images";
+} from "@/assets/images";
 
 import "./style.css";
 

@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
-
 import { useLocation } from "react-router-dom";
 
-import { BarIconBlack, BarIconWhite, Logo, LogoClear } from "src/assets/images";
+// Assets
+import { BarIconBlack, BarIconWhite, Logo, LogoClear } from "@/assets/images";
 
+// Constants
+import { CONTACT_ADDRESS, CONTACT_EMAIL } from "@/constants";
+
+// Related Components
 import MenuContent from "./MenuContent";
 
+// Styles
 import "./style.css";
 
 const Header = () => {
@@ -45,11 +50,13 @@ const Header = () => {
               {!isHome && (
                 <ul className="contact-info">
                   <li>
-                    <i className="flaticon-pin"></i>Via Caduti Del Lavoro 8
+                    <i className="flaticon-pin"></i>
+                    {CONTACT_ADDRESS}
                   </li>
                   <li>
-                    <a href="mailto:info@sartoriamonterado.it">
-                      <i className="flaticon-email"></i>info@sartoriamonterado.it
+                    <a href={`mailto:${CONTACT_EMAIL}`}>
+                      <i className="flaticon-email"></i>
+                      {CONTACT_EMAIL}
                     </a>
                   </li>
                 </ul>

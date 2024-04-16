@@ -1,11 +1,13 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
-import { PageTitle } from "src/components";
+// Assets
+import { ErrorBackground } from "@/assets/images";
 
-import { ErrorBackground } from "src/assets/images";
+// Components
+import PageTitle from "@/components/PageTitle";
 
+// Styles
 import "./style.css";
 
 const Error = () => {

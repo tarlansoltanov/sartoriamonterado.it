@@ -4,10 +4,10 @@ import App from "./App.tsx";
 
 import { BrowserRouter } from "react-router-dom";
 
-import "src/i18n";
+import "@/i18n";
 
 import "bootstrap/dist/css/bootstrap.css";
-import "src/assets/css/style.css";
+import "@/assets/css/style.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

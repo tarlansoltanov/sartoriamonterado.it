@@ -1,9 +1,7 @@
 import React from "react";
-
 import { useTranslation } from "react-i18next";
 
-import { PageTitle } from "src/components";
-
+// Assets
 import {
   AboutBackground,
   HistoryImage1,
@@ -17,8 +15,12 @@ import {
   HistoryImage9,
   HistoryImage10,
   HistoryImage11,
-} from "src/assets/images";
+} from "@/assets/images";
 
+// Components
+import PageTitle from "@/components/PageTitle";
+
+// Styles
 import "./style.css";
 
 const About = () => {

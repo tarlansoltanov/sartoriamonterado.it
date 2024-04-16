@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 
-import { Home, About, Philosophy, Error } from "src/pages";
+import * as Pages from "@/pages";
 
 const publicRoutes = [
   {
@@ -9,19 +9,19 @@ const publicRoutes = [
   },
   {
     path: "/home",
-    component: <Home />,
+    component: <Pages.Home />,
   },
   {
     path: "/about",
-    component: <About />,
+    component: <Pages.About />,
   },
   {
     path: "/philosophy",
-    component: <Philosophy />,
+    component: <Pages.Philosophy />,
   },
   {
     path: "*",
-    component: <Error />,
+    component: <Pages.Error />,
   },
 ];
 

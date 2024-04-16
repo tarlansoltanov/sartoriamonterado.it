@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
-
 import { useTranslation } from "react-i18next";
 
-import { FooterBackground } from "src/assets/images";
+// Constants
+import { CONTACT_NAME, CONTACT_EMAIL, DEVELOPER_NAME, DEVELOPER_WEBSITE } from "@/constants";
 
+// Assets
+import { FooterBackground } from "@/assets/images";
+
+// Styles
 import "./style.css";
 
 const Footer = () => {
@@ -63,7 +67,7 @@ const Footer = () => {
                 <div className="col-md-6">
                   <div className="contact-widget_mail-title">{t("footer.send_email")}</div>
                   <div className="contact-widget_mail">
-                    <a href="mailto:info@sartoriamonterado.it">info@sartoriamonterado.it</a>
+                    <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
                   </div>
                 </div>
               </div>
@@ -76,12 +80,12 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="auto-container">
           <div className="copyright">
-            © Copyright {new Date().getFullYear()} by Sartoria Monterado
+            © Copyright {new Date().getFullYear()} by {CONTACT_NAME}
           </div>
           <div className="copyright">
             Design and Develop by{" "}
-            <a href="https://codeshift.az" target="_blank">
-              CodeShift
+            <a href={DEVELOPER_WEBSITE} target="_blank">
+              {DEVELOPER_NAME}
             </a>
           </div>
         </div>

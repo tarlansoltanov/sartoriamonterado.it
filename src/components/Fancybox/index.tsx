@@ -12,14 +12,11 @@ interface Props {
   options?: Partial<FancyboxOptionsType>;
 }
 
-function Fancybox({ className, children, delegate, options }: Props) {
+function Fancybox({ className, children, delegate = "[data-fancybox]", options = {} }: Props) {
   const containerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
-
-    delegate = delegate || "[data-fancybox]";
-    options = options || {};
 
     NativeFancybox.bind(container, delegate, options);
 

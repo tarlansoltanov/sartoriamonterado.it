@@ -1,32 +1,27 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { Header, Footer, ScrollToTop } from "src/components";
+// Components
+import Layout from "@/components/Layout";
 
-import { publicRoutes } from "src/routes";
-import { ScrollMiddleWare } from "src/routes/middlewares";
+// Middlewares
+import { ScrollMiddleWare } from "@/routes/middlewares";
+
+// Routes
+import { publicRoutes } from "@/routes";
 
 function App() {
   return (
-    <React.Fragment>
-      <div className="page-wrapper">
-        <Header />
-
-        <Routes>
-          {publicRoutes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              element={<ScrollMiddleWare>{route.component}</ScrollMiddleWare>}
-            />
-          ))}
-        </Routes>
-
-        <Footer />
-      </div>
-
-      <ScrollToTop />
-    </React.Fragment>
+    <Layout>
+      <Routes>
+        {publicRoutes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={<ScrollMiddleWare>{route.component}</ScrollMiddleWare>}
+          />
+        ))}
+      </Routes>
+    </Layout>
   );
 }
 

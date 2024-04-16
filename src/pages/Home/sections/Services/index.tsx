@@ -1,13 +1,15 @@
 import { useTranslation } from "react-i18next";
 
+// Assets
 import {
   ServiceImage1,
   ServiceImage2,
   ServiceImage3,
   ServiceImage4,
   ShapeIcon1,
-} from "src/assets/images";
+} from "@/assets/images";
 
+// Styles
 import "./style.css";
 
 const Services = () => {

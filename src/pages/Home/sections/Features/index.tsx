@@ -1,7 +1,9 @@
 import { useTranslation } from "react-i18next";
 
-import { FeatureImage1, FeatureImage2, FeatureImage3 } from "src/assets/images";
+// Assets
+import { FeatureImage1, FeatureImage2, FeatureImage3 } from "@/assets/images";
 
+// Styles
 import "./style.css";
 
 const Features = () => {
